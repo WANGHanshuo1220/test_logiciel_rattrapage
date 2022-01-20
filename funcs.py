@@ -19,7 +19,8 @@ def derive(list, interval):
     return re
 
 def derive2(list, interval):
-    return -1
+    der1 = derive(list, interval)
+    return derive(der1, interval)
 
 def appro_derive(func, ordre, point):
     return -1

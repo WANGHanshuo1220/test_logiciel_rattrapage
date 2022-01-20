@@ -15,9 +15,9 @@ class TestFuncs(unittest.TestCase):
         self.assertEqual(funcs.derive([], 2.0), False)
 
 
-    # def test_derive2(self):
-    #     self.assertEqual(funcs.derive2([1.0, 2.0, 4.0], 2.0) ,[0.25])
-    #     self.assertEqual(funcs.derive2([1.0, 2.0, 4.0, 10.0, 20.0], 4.0),[0.0625, 0.25, 0.25])
+    def test_derive2(self):
+        self.assertEqual(funcs.derive2([1.0, 2.0, 4.0], 2.0) ,[0.25])
+        self.assertEqual(funcs.derive2([1.0, 2.0, 4.0, 10.0, 20.0], 4.0),[0.0625, 0.25, 0.25])
 
     # def test_appro_derive(self):
     #     self.assertEqual(funcs.appro_derive(funcs.func_x2, 0.1, 1.2), 1.4)
