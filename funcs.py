@@ -7,7 +7,16 @@ def miroir(s, indice):
     return re
 
 def derive(list, interval):
-    return -1
+    re = []
+
+    if len(list) <= 1: 
+        return False
+
+    for i in range(1, len(list)):
+        derive = (list[i] - list[i-1]) / interval
+        re.append(derive)
+
+    return re
 
 def derive2(list, interval):
     return -1

@@ -7,12 +7,12 @@ class TestFuncs(unittest.TestCase):
         self.assertEqual(funcs.miroir("WeAreTheChampion", 3),"WeArrAeW")
         self.assertEqual(funcs.miroir("WeAreTheChampion", 6),"WeAreThhTerAeW")
 
-    # def test_derive(self):
-    #     self.assertEqual(funcs.derive([1.0, 2.0], 2.0), [0.5])
-    #     self.assertEqual(funcs.derive([1.0, 2.0, 4.0], 2.0), [0.5, 1.0])
-    #     self.assertEqual(funcs.derive([1.0, 2.0, 4.0, 10.0, 20.0], 4.0), [0.25, 0.5, 1.5, 2.5])
-    #     self.assertEqual(funcs.derive([1.0], 2.0), False)
-    #     self.assertEqual(funcs.derive([], 2.0), False)
+    def test_derive(self):
+        self.assertEqual(funcs.derive([1.0, 2.0], 2.0), [0.5])
+        self.assertEqual(funcs.derive([1.0, 2.0, 4.0], 2.0), [0.5, 1.0])
+        self.assertEqual(funcs.derive([1.0, 2.0, 4.0, 10.0, 20.0], 4.0), [0.25, 0.5, 1.5, 2.5])
+        self.assertEqual(funcs.derive([1.0], 2.0), False)
+        self.assertEqual(funcs.derive([], 2.0), False)
 
 
     # def test_derive2(self):
