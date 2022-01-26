@@ -32,7 +32,10 @@ def derive2(list, interval):
 
 def appro_derive(func, point, ordre):
     re = func(point)
-    a = len(str(ordre).split(".")[1])
+    if ordre == 1 :
+        a = 0
+    else :
+        a = len(str(ordre).split(".")[1])
     re = round(re, a)
     return re
 

@@ -25,6 +25,7 @@ class TestFuncs(unittest.TestCase):
 
     def test_appro_derive(self):
         self.assertEqual(funcs.appro_derive(funcs.func_x2, 1.2, 0.1), 1.4) 
+        self.assertEqual(funcs.appro_derive(funcs.func_x2, 1.2, 1), 1) 
         self.assertEqual(funcs.appro_derive(funcs.func_polynomial, 1.2, 0.01), 9.21)
         self.assertEqual(funcs.appro_derive(funcs.func_x_1, 3.1, 0.001), 0.323)
         self.assertEqual(funcs.appro_derive(funcs.func_sin, 2, 0.0001), 0.9093)
